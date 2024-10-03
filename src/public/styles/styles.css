@@ -130,7 +130,7 @@ main {
     transform: scale(1.05);
 }
 
-.doesnt-have-acc {
+.dont-have-acc {
     text-decoration: underline;
     text-decoration-color: black;
     font-size: 0.8rem;

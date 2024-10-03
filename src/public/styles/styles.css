@@ -31,7 +31,6 @@ main {
     width: 60%;
     justify-content: center;
     align-items: center;
-
     background-color: rgba(0, 81, 255, 0.45);
     flex-basis: 60%;
     flex-shrink: 2;
@@ -103,11 +102,11 @@ main {
     border: none;
     border-radius: 5px;
     background-color: black;
-    background-image: linear-gradient(to right, #969696, #a7a7a7);
+    background-image: linear-gradient(to right, #313131, #444444);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 0px 100%;
-    transition: ease-out 0.2s;
+    transition: ease 0.1s;
     color: white;
 }
 

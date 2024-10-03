@@ -9,6 +9,26 @@
     }
 }
 
+@keyframes moveSection {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@view-transition {
+    navigation: auto;
+}
+
+::view-transition-old(main-section) {
+    animation: moveSection 0.3s both;
+}
+::view-transition-new(main-section) {
+    animation: moveSection 0.3s both reverse;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -39,6 +59,7 @@ main {
 .main-section {
     display: flex;
     flex-direction: column;
+    view-transition-name: main-section;
     width: 40%;
 }
 
@@ -51,14 +72,7 @@ main {
     margin-top: 7rem;
 }
 .fifthofive-title-container > h1 {
-    font-size: 3rem;
-    background-image: linear-gradient(to right, red, deeppink, cyan, lightgreen, cyan, deeppink, red);
-    background-size: 500% auto;
-    background-clip: text;
-    color: transparent;
-
-    animation: shineTitle 2s infinite ease-in-out;
-    animation-delay: 0ms;
+    font-size: 2.5rem;
 }
 .acc-section {
     display: flex;
